@@ -1,0 +1,25 @@
+id,text,label
+1,Machine learning algorithms analyze data patterns,Machine Learning
+2,Neural networks train on large datasets,Machine Learning
+3,Deep learning models predict outcomes,Machine Learning
+4,Supervised learning requires labeled data,Machine Learning
+5,Classification trees are machine learning models,Machine Learning
+6,Python libraries like scikit-learn enable machine learning,Machine Learning
+7,Software development requires coding skills,Software Development
+8,Java programming language builds applications,Software Development
+9,Web development uses HTML CSS and JavaScript,Software Development
+10,Database design is essential for software systems,Software Development
+11,Testing and debugging are software development tasks,Software Development
+12,Agile methodology improves software project management,Software Development
+13,Data analysis reveals business insights,Data Analysis
+14,Statistical methods analyze numerical information,Data Analysis
+15,Exploratory data analysis examines datasets,Data Analysis
+16,Visualization tools display data patterns,Data Analysis
+17,Regression analysis models relationships between variables,Data Analysis
+18,Data mining discovers hidden patterns,Data Analysis
+19,Software architecture defines system structure,Architecture
+20,Design patterns solve common architecture problems,Architecture
+21,Microservices architecture improves scalability,Architecture
+22,API design is crucial for system integration,Architecture
+23,Database architecture ensures data consistency,Architecture
+24,Cloud architecture provides scalable infrastructure,Architecture

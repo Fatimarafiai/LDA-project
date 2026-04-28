@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
@@ -19,26 +18,30 @@ print("="*70)
 print("\n[1/6] 📂 Chargement des données avec LABELS...")
 try:
     df = pd.read_csv('data/lda_dataset.csv')
-    print(f"✅ {len(df)} documents chargés")
+    print(f"✅ {len(df)} documents chargés (avant nettoyage)")
     print(f"\n📋 Classes (LABELS):")
     for i, cls in enumerate(df['label'].unique(), 1):
         count = (df['label'] == cls).sum()
         print(f"   {i}. {cls} : {count} documents")
-    print(f"\nDistribution des classes:")
-    print(df['label'].value_counts())
 except FileNotFoundError:
     print("❌ Erreur: Fichier 'data/lda_dataset.csv' non trouvé")
     exit()
 
 # ============================================
-# 2️⃣ PRÉPARATION DES DONNÉES
+# 2️⃣ PRÉPARATION DES DONNÉES (FEATURES NUMÉRIQUES)
 # ============================================
-print("\n[2/6] 🔤 Vectorization TF-IDF...")
-vectorizer = TfidfVectorizer(max_features=50, stop_words='english')
-X = vectorizer.fit_transform(df['text']).toarray()
+print("\n[2/6] 🔢 Extraction des FEATURES NUMÉRIQUES...")
+
+# Supprimer les lignes avec des valeurs manquantes (NaN)
+df = df.dropna(subset=['label'])
+print(f"✅ Après nettoyage: {len(df)} documents")
+
+# Extraire les colonnes de features (f1, f2, ..., f50)
+feature_cols = [col for col in df.columns if col.startswith('f')]
+X = df[feature_cols].values
 y = df['label'].values
 
-print(f"✅ Vocabulaire: {X.shape[1]} features")
+print(f"✅ Features numériques: {X.shape[1]}")
 print(f"✅ Documents: {X.shape[0]}")
 print(f"✅ Classes: {len(np.unique(y))}\n")
 

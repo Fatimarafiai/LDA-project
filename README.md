@@ -1,18 +1,18 @@
-# 📊 Linear Discriminant Analysis (LDA) - Classification Project
+ Linear Discriminant Analysis (LDA) - Classification Project
 
-## Description
+ Description
 Projet de **Classification supervisée** avec Linear Discriminant Analysis (LDA).
 
 **Classifie automatiquement des documents en 4 catégories** en utilisant des LABELS.
 
-## 🎯 Objectif
+## Objectif
 Entraîner un modèle LDA qui classe les documents en 4 catégories :
 - **Machine Learning** - Algorithmes, réseaux de neurones, deep learning
 - **Software Development** - Développement, coding, frameworks
 - **Data Analysis** - Analyse statistique, visualisation, mining
 - **Architecture** - Conception système, patterns, design
 
-## 📊 Données
+## Données
 
 ```
 Total: 24 documents avec LABELS
@@ -25,7 +25,7 @@ Distribution:
 Format: CSV (id, text, label)
 ```
 
-## 🚀 Installation & Utilisation
+## Installation & Utilisation
 
 ### Étape 1: Cloner le repository
 ```bash
@@ -70,7 +70,7 @@ python scripts/linear_discriminant_analysis.py
 | `lda_summary.csv` | Résumé des métriques |
 | `lda_classes_info.csv` | Information par classe |
 
-## 📁 Structure du Projet
+## Structure du Projet
 
 ```
 lda-project/
@@ -93,7 +93,7 @@ lda-project/
 └── .gitignore                             # Fichiers à ignorer
 ```
 
-## 🔧 Technologies Utilisées
+##  Technologies Utilisées
 
 - **Python** 3.8+
 - **scikit-learn** - Machine Learning (LDA)
@@ -106,19 +106,19 @@ lda-project/
 
 **Linear Discriminant Analysis** est un algorithme de **classification supervisée** qui :
 
-### ✅ Caractéristiques
+### Caractéristiques
 - Sépare les classes avec une **limite linéaire**
 - Réduit la **dimensionnalité** des données
 - **Maximise** la séparation entre classes
 - **Minimise** la variance intra-classe
 
-### 📊 Fonctionnement
+### Fonctionnement
 1. **Reçoit** des documents avec des LABELS
 2. **Entraîne** sur 75% des données (TRAIN SET)
 3. **Teste** sur 25% des données (TEST SET)
 4. **Prédit** la classe des nouveaux documents
 
-## 👤 Auteur
+## Auteur
 
 **Fatima**  
 Date: Avril 2026

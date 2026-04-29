@@ -132,7 +132,4 @@ Dernière mise à jour: 2026-04-29
 # Contact et Support
 Pour des questions ou des suggestions, n'hésitez pas à ouvrir une issue sur GitHub.
 
-
-Happy Classifying!
-
 LDA Transform Complex Data into Clear Classifications!
